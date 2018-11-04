@@ -1,0 +1,39 @@
+body {
+    background-color: #dff0d8;
+}
+
+nav{
+    border: 1px solid black;       /* Lägger runt border runt alla "sträck" */
+    padding: 10px; 
+  
+}
+
+nav a {  /* Nav som vi använder oss utan Start - Om mig - Om CSS samt Övrigt */
+    margin: 20px; /* Vi använder oss av Marginf ör skapa utrymme runt elementet. */
+  padding-right: 30px;
+}
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+h2 {
+    text-align: center;
+    border: 1px solid black;
+    color: orange;
+    font-style: italic;
+    font-size: 35px;
+    background-color: grey;
+}
+h3 {
+    text-align: center;
+    font-style: oblique;
+}
+img {
+    border-radius: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: auto;
+}

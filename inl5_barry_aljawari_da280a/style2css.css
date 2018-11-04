@@ -1,0 +1,31 @@
+body {
+  background-color: #DCDCDC;
+}
+
+nav{
+    border: 1px solid black;       /* Lägger runt border runt alla "sträck" */
+    padding: 10px; 
+  
+}
+
+nav a {  /* Nav som vi använder oss utan Start - Om mig - Om CSS samt Övrigt */
+    margin: 20px; /* Vi använder oss av Marginf ör skapa utrymme runt elementet. */
+  padding-right: 30px;
+}
+
+
+ul {
+  margin: 1em;
+  padding: .5em;
+}
+h3 {
+  color: green;
+  text-align: center;
+  text-decoration: underline;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+  font-style: oblique;
+  font-weight: normal;
+}
