@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"><!-- För att kunna använda ÖÅÄ utan att få error på W3C-->
+  <title>Inl. 3 - Barry</title><!-- Titel av HTML, Kan även synas på TAB i Google chrome etc.-->
+</head>
+<body>
+  <h1>Inlämning 3</h1><!--Huvudtitlen-->
+  <form action="http://webshare.mah.se/tszagh/response.php" method="get"> <!-- metoden för att skicka GET metoden  -->
+    <fieldset class="Kontakt"> <!-- Anger class ifall man vill style med CSS  -->
+      <legend>Kontaktuppgifter:</legend><br>  <!-- Använder fieldset för ramen. -->
+      Namn: <input name="name" placeholder="Namn här..." required type="text"><br> <!-- Använder required för att det krävs vara inskrivet för skicka vidare.  -->
+      <br>
+      Ålder: <input name="age" placeholder="Ålder här..." required type="number"><br> <!-- Använder required för att det krävs vara inskrivet för skicka vidare.  -->
+      <br>
+    </fieldset>
+    <fieldset class="blomstermål">
+      <legend>Dina besök på blomstermålabladet:</legend>
+      <p>Hur ofta besöker du blomstermålabladet?</p><input name="freq" required type="radio" value="Varje dag"> Varje dag<br> <!-- Använder required för att det krävs vara inskrivet för skicka vidare.  -->
+      <input name="freq" required type="radio" value="Varannan dag"> Varannan dag<br> <!-- Använder Radio för att få fram ett svars alternativ -->
+      <input name="freq" required type="radio" value="Varje vecka"> Varje vecka<br>
+      <p>Vilka delar av blomstermålabladet brukar du besöka?</p><input name="visits" type="checkbox" value="Nyheter"> Nyheter<br>
+      <input name="visits[]" type="checkbox" value="Utrikes"> Utrikes<br> <!-- Checkbox gör att man kan använda sig av flervalsalternativ -->
+      <input name="visits[]" type="checkbox" value="Inrikes"> Inrikes<br>
+      <input name="visits[]" type="checkbox" value="Sport"> Sport<br>
+      <input name="visits[]" type="checkbox" value="Skvaller"> Skvaller<br>
+      <input name="visits[]" type="checkbox" value="Väder"> Väder<br>
+      <input name="visits[]" type="checkbox" value="Övrigt"> Övrigt<br>
+    </fieldset>
+    <fieldset class="Vinn">
+      <legend>Vinn en T-Shirt!</legend><br>
+      <p>Ni har möjligheten att vinna en T-shirt om ni fyller i följande information</p>
+      <p>Bästa med blomstermålabladet:</p>
+      <textarea cols="20" name="best" rows="2"></textarea> <!-- Anger textfält med cols 20 och rad 2 för få en minimalt och tillräckligt storlek av textfältet.-->
+      <p>Sämsta med blomstermålabladet:</p>
+      <textarea cols="20" name="worst" rows="2">  </textarea><br>
+      <br>
+      Epost: <input name="email" placeholder="t.ex. baller@mah.se" type="email"><br> <!-- placeholder gör att man får en text inne i textrutan -->
+      <br>
+      Storlek: <select name="size"> <!-- Använder Select för en dropdown meny -->
+        <option value="XS">
+          XS
+        </option>
+        <option value="S">
+          S
+        </option>
+        <option value="M" selected> <!-- Använder Selected för att ange att M ska visas som först -->
+          M
+        </option>
+        <option value="L">
+          L
+        </option>
+        <option value="XL">
+          XL
+        </option>
+      </select>
+    </fieldset>
+    <fieldset class="Skicka">
+      <legend>Skicka/Återställ</legend><br>
+      <button type="submit" value="Skicka">Skicka</button> <button type="reset" value="Återställ">Återställ</button> <!-- Använder mig utav submit för skicka och reset för rensa formuläret-->
+    </fieldset>
+  </form>
+</body>
+</html>
