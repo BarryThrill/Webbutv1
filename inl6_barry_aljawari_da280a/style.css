@@ -1,0 +1,124 @@
+body { /* Body för hela hemsidan  */
+    font-family: "Lato", sans-serif; 
+}
+h1 { /* Huvudtexten  */
+    color: white;
+    text-align: center;
+}
+h2 { /* Andra huvudtext   */
+    color: black;
+    font-size: 50px;
+    text-align: left;
+    padding-right: 20px;
+}
+.sidenav { /* Menyn  */
+    text-align: center;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding-top: 100px;
+}
+.sidenav a { /* Länkarna menyerna, Att dem skall ha en struktur samt en border runt om så att det ser finare ut.  */
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    color: #818181;
+    display: block;
+    border: 10px solid black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 12px;
+}
+.sidenav a:hover { /* När man har musen på en av menyerna så kommer det ändra sig til rött färg.  */
+    color: #FF0000;
+}
+.main {
+    padding-left: 15%;
+}
+div.gallery { 
+    margin: 5px;
+    float: left;
+    width: 28.3%;
+    display: inline;
+}
+div.gallery img { /* Gallery img är bilderna som är i classen gallery, det vill säga de tre bilderna.   */
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+}
+div.desc { /* Texterna för de 3 bilderna  */
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    padding: 15px;
+    text-align: left;
+}
+
+#pic2 {
+    padding: 0px 70px 0 70px;
+}
+.text {
+    float: left;
+    font-size: 17px;
+    position: relative;
+}
+.clearfix { /* Liten "hack" för att få bilderna fastna inne i en border eller struktur istället för det skall falla utanför - https://www.w3schools.com/howto/howto_css_clearfix.asp  */
+    overflow: auto;
+}
+.img2 {
+    float: right;
+    width: 30%;
+    height: 30%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 35px;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+    font-family: Impact, Charcoal, sans-serif;
+}
+@media only screen and (max-width: 824px) { /* Mobil version, Jag använde mig 824px eftersom min Google Pixel 2 XL har en width på 823 som är lättare att testa. 
+    - Detta är ganska likt det som är ovanför endast att det är lite andra storlekar eftersom vi vill förfina det för mobilanpassadet.*/ 
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    .main {
+        width: 100%;
+        padding: 0 0 0 0;
+        margin-top: 528px;
+    }
+    div.gallery {
+        float: none;
+        display: inline;
+    }
+    #pic2 {
+        padding: 0px;
+    }
+    h2 {
+        text-align: center;
+        padding: 10% 0 0 20px;
+    }
+    div.gallery img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+    .img2 {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 85%;
+        background-color: white;
+    }
+}
